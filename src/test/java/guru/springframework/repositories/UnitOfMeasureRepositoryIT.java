@@ -26,6 +26,9 @@ public class UnitOfMeasureRepositoryIT {
     public void setUp() throws Exception {
     }
 
+    /* in here we insert object with description 'Teaspoon' with data.sql before test runner initializing spring context .
+        INSERT INTO unit_of_measure (description) VALUES ('Teaspoon');
+    */
     @Test
     public void findByDescription() throws Exception {
 
